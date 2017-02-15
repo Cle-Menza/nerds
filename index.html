@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body>
+  <header class="header-page">
+    <nav class="top-nav">
+      <div class="top-nav__logo">
+        <img src="" alt="Logo Nerds">
+      </div>
+      <div class="top-nav__menu">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sliders">
+      <input type="radio" id="btn-slide1" name="sliders" checked>
+      <input type="radio" id="btn-slide2" name="sliders">
+      <input type="radio" id="btn-slide3" name="sliders">
+      <div class="sliders_inner">
+        <div class="slide1">
+          <div class="slide-content">
+            <h2 class="slide-content__title">Долго, дорого, скрупулезно.</h2>
+            <b class="slide-content__promo">Математически выверенный дизайн 
+          для вашего сайта или мобильного приложения.</b>
+            <a class="btn slide-content__button" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slide2">
+          <div class="slide-content">
+            <h2 class="slide-content__title">Любите ли вы математику, как любим ее мы?.</h2>
+            <b class="slide-content__promo">Нашим дизайнерам мы удаляем нейроны, ответственные
+          за креатив, чтобы дать им возможность все просчитать</b>
+            <a class="btn slide-content__button" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slide3">
+          <div class="slide-content">
+            <h2 class="slide-content__title">Только наркотики, только хардкор!</h2>
+            <b class="slide-content__promo">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</b>
+            <a class="btn slide-content__button" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="sliders_nav">
+          <label for="btn-slide1"></label>
+          <label for="btn-slide2"></label>
+          <label for="btn-slide3"></label>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+
 </html>
