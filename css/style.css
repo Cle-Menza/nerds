@@ -1,3 +1,4 @@
+/* main */
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/robotomedium.woff") format('woff'),
@@ -42,6 +43,9 @@ button.btn {
 .btn:hover {
   background: #d6494d;
   transition: background-color .5s ease;
+}
+.btn:not(:hover) {
+    transition: background-color 1s ease;
 }
 .btn:active {
   background: #b63538;
@@ -107,6 +111,9 @@ button.btn {
   content: "";
   background: url("../img/basket.png") center no-repeat;
 }
+.top-nav__menu a:not(:hover) {
+  transition: color 1s ease;
+}
 .top-nav__menu a:hover {
   color: #fb565a;
   transition: color .5s ease;
@@ -115,6 +122,10 @@ button.btn {
   background: url("../img/basket-hover.png") center no-repeat;
   transition: background .5s ease;
 }
+.top-nav__menu li:last-child a:not(:hover)::before {
+  transition: background 1s ease;
+}
+
 .top-nav__menu a:active {
   opacity: .4;
   color: #000;
@@ -404,6 +415,9 @@ button.btn {
   opacity: 1;
   transition: opacity .5s ease;
 }
+.clients a:not(:hover) {
+  transition: opacity 1s ease;
+}
 /* index footer */
 
 .footer-page__map {
@@ -493,6 +507,9 @@ button.btn {
   background-color: #fb565a;
   transition: background-color .5s ease;
 }
+.footer-page__socials_left .social_icons:not(:hover) {
+  transition: background-color 1s ease;
+}
 .footer-page__socials_left .social_icons:active {
   background-color: #d6494d;
   box-shadow: inset 0 5px 10px -3px rgba(0,0,0,.15);
@@ -520,7 +537,7 @@ button.btn {
   left: 50%;
   margin-left: -326px;
   background: #fff;
-  box-shadow: 0 20px 40px -5px rgba(0,1,1,.75);
+  box-shadow: 0 5px 40px -5px rgba(0,1,1,.75);
 }
 .popup-form-btn-close {
   width: 42px;
@@ -587,4 +604,15 @@ button.btn {
 }
 .popup-form-btn-send {
   width: 100%;
+}
+.show-popup {
+  display: block;
+}
+/* animation */
+@keyframes anim {
+  0% {transform: scale(.1, .1)}
+  100% {transform: scale(1, 1)}
+}
+.anim {
+  animation: anim .2s linear;
 }
