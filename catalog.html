@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header-page">
+    <div class="container">
+      <nav class="top-nav clearfix">
+        <div class="top-nav__logo">
+          <a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Logo Nerds"></a>
+        </div>
+        <div class="top-nav__menu">
+          <ul>
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a class="current-menu" href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h2 class="catalog-promo-title">Добро пожаловать в магазин готовых макетов</h2>
+    </div>
+  </header>
+  <main class="container clearfix catalog-content">
+    <div class="form-sort form-sort--left">
+      <form action="#" method="get">
+        <fieldset class="form-sort__price">
+          <legend>Стоимость:</legend>
+          <div class="input-range">
+            <input type="range">
+          </div>
+          <label for="number1">От</label><input id="number1" type="number" value="0">
+          <label for="number2">До</label><input id="number2" type="number" value="15000">
+        </fieldset>
+        <fieldset class="form-sort__grid">
+          <legend>Сетка:</legend>
+          <input type="radio" name="grid-type" value="adaptive" id="adaptive" checked><label for="adaptive">Адаптивная</label>
+          <input type="radio" name="grid-type" value="fix" id="fix"><label for="fix">Фиксированная</label>
+          <input type="radio" name="grid-type" value="responsive" id="responsive" disabled><label for="responsive">Резиновая</label>
+        </fieldset>
+        <fieldset class="form-sort__features">
+          <legend>ОСОБЕННОСТИ:</legend>
+          <input type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label>
+          <input type="checkbox" name="block-features" id="block-features"><label for="block-features">Блок преимуществ</label>
+          <input type="checkbox" name="news" id="news" checked><label for="news">Новости</label>
+          <input type="checkbox" name="gallery" id="gallery" disabled><label for="gallery">Галерея</label>
+          <input type="checkbox" name="basket" id="basket" disabled><label for="basket">Корзина</label>
+        </fieldset>
+        <a href="#" class="btn form-sort__btn">Показать</a>
+      </form>
+    </div>
+    <div class="catalog-items catalog-items--right">
+      <div class="catalog-items__sort">
+        <b>Сортировать:</b>
+        <a class="catalog-items__sort-link current-link" href="#">По цене</a>
+        <a class="catalog-items__sort-link" href="#">По типу</a>
+        <a class="catalog-items__sort-link" href="#">По функционалу</a>
+        <a class="catalog-items__sort-mark catalog-items__sort-mark--down current-sort" href="#">Down</a>
+        <a class="catalog-items__sort-mark catalog-items__sort-mark--up" href="#">Up</a>
+      </div>
+      <div class="catalog-items__main clearfix">
+        <article class="catalog-item">
+          <div class="catalog-item__main-img">
+            <img src="img/i1.jpg" width="240" height="240" alt="Aviator">
+          </div>
+          <div class="catalog-item__info">
+            <h2>Aviator</h2>
+            <p>Одностраничный макет с авторским дизайном</p>
+            <a href="" class="btn catalog-item__btn-buy">8000 р.</a>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <div class="catalog-item__main-img">
+            <img src="img/i2.jpg" width="240" height="240" alt="Sunset">
+          </div>
+          <div class="catalog-item__info">
+            <h2>Sunset</h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a href="" class="btn catalog-item__btn-buy">10000 р.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item__main-img">
+            <img src="img/i3.jpg" width="240" height="240" alt="Forte">
+          </div>
+          <div class="catalog-item__info">
+            <h2>Forte</h2>
+            <p>Отличный макет для личного блога</p>
+            <a href="" class="btn catalog-item__btn-buy">5000 р.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item__main-img">
+            <img src="img/i4.jpg" width="240" height="240" alt="Modern Organic Thai">
+          </div>
+          <div class="catalog-item__info">
+            <h2>Modern Organic Thai</h2>
+            <p>Сайт для ресторана быстрого питания</p>
+            <a href="" class="btn catalog-item__btn-buy">12000 р.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item__main-img">
+            <img src="img/i5.jpg" width="240" height="240" alt="Avenue">
+          </div>
+          <div class="catalog-item__info">
+            <h2>Avenue</h2>
+            <p>Макет для блога о путешествиях</p>
+            <a href="" class="btn catalog-item__btn-buy">8000 р.</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item__main-img">
+            <img src="img/i6.jpg" width="240" height="240" alt="Dovetail">
+          </div>
+          <div class="catalog-item__info">
+            <h2>Dovetail</h2>
+            <p>Интернет-магазин с галереей товаров</p>
+            <a href="" class="btn catalog-item__btn-buy">14000 р.</a>
+          </div>
+        </article>
+      </div>
+      <div class="catalog-item__paginator">
+        <a class="btn paginator-link current-pag-link" href="">1</a>
+        <a class="btn paginator-link" href="">2</a>
+        <a class="btn paginator-link" href="">3</a>
+        <a class="btn paginator-link paginator-link--next" href="">Следущая</a>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer-page">
+    <div class="footer-page__map">
+      <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.320894615892275!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1488277288245"
+        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="container">
+        <div class="footer-page__map_contacts">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург, ул.&nbsp;Б.Конюшенная, д. 19/8</p>
+          <a href="tel:78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="btn map_contacts_btn" href="">Напишите нам</a>
+        </div>
+      </div>
+      <!--pop up begin-->
+      <div class="overlay"></div>
+      <div class="popup-form">
+        <form method="post" action="">
+          <button type="button" class="btn popup-form-btn-close"></button>
+          <div class="popup-form-clearfix clearfix">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
+            </div>
+            <div class="form-group">
+              <label for="textarea">Текст письма:</label>
+              <textarea rows="5" id="textarea" cols="67" placeholder="В свободной форме" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn popup-form-btn-send">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+      <!--pop up end-->
+    </div>
+    <div class="footer-page__socials">
+      <div class="container clearfix">
+        <div class="footer-page__socials_left">
+          <ul>
+            <li><a class="social_icons ic_vk" href="">Vkontakte</a></li>
+            <li><a class="social_icons ic_fb" href="">Facebook</a></li>
+            <li><a class="social_icons ic_ins" href="">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-page__socials_right">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script async src="js/main.js"></script>
+</body>
+
+</html>
